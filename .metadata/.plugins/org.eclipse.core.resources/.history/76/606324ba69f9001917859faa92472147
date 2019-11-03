@@ -1,0 +1,23 @@
+package com.example.ToDo.di.config;
+
+import java.util.Date;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.example.ToDo.di.IToDo;
+import com.example.ToDo.di.Todo;
+
+
+@Configuration
+@ComponentScan(basePackages = "com.example.ToDo.di")
+public class Config {
+	
+	public IToDo getToDo() {
+		Todo td = new Todo(0,"Lê Văn Hoan");
+		td.setDone(true);
+		td.setDueDate(new Date());
+		return td
+	}
+	
+}

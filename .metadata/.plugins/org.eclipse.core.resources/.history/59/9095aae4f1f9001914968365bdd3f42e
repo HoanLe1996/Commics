@@ -1,0 +1,21 @@
+package com.example.issues.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.reponsitory.IssuesReponsitory;
+
+@Controller
+@RequestMapping("/issues")
+public class IssuesController {
+
+	@Autowired
+	private IssuesReponsitory issues;
+	
+	@GetMapping("/issuereport")
+	public String form_issues() {
+		return "issuereport_form.html";
+	}
+}

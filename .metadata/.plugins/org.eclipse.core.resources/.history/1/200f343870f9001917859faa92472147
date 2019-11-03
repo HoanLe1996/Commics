@@ -1,0 +1,38 @@
+package com.example.ToDo.model;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class ToDo {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+
+    private String summary;
+
+    private String description;
+
+    private Boolean done;
+
+    private Date dueDate;
+    
+    public ToDo copy() {
+    	ToDo todo = new ToDo(summary);
+        todo.setDone(getDone());
+        todo.setDueDate(getDueDate());
+        todo.setDescription(getDescription());
+
+        return todo;
+    }
+    
+    
+}

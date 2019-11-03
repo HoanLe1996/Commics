@@ -1,0 +1,21 @@
+1572314543255	Move compilation unit
+1572316608068	Move 'issuereport_form.html' to 'templates'
+1572317749537	Move 'issuereport_form.html' to 'issues'
+1572318743838	Move 'issuereport_form.html' to 'templates'
+1572336443153	Move 'issuereport_list.html' to 'WEB_INF'
+1572336445859	Move 'issuereport_form.html' to 'WEB_INF'
+1572336472061	Move 'issuereport_form.html' to 'issues'
+1572336473729	Move 'issuereport_list.html' to 'issues'
+1572336553178	Rename resource 'WEB_INF'
+1572336669010	Move 'issuereport_form.html' to 'templates'
+1572336670947	Move 'issuereport_list.html' to 'issues'
+1572336672664	Move 'issuereport_form.html' to 'issues'
+1572336740288	Move 'issuereport_form.html' to 'templates'
+1572337042018	Delete element
+1572337066957	Delete element
+1572337111917	Move 'issuereport_form.html' to 'view-templates'
+1572337671049	Move 'view-templates' to 'templates'
+1572338398120	Move 'issuereport_form.html' to 'issues'
+1572338400251	Delete element
+1572345739480	Move 'style.css' to 'static'
+1572345803399	Move 'style.css' to 'css'

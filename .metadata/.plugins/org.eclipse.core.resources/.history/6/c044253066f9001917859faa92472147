@@ -1,0 +1,76 @@
+package com.example.ToDo.di;
+
+import java.util.Date;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Todo implements IToDo {
+	public final long id;
+	private String summary;
+	private Boolean done;
+	private Date dueDate;
+
+	public Todo() {
+		this(-1);
+	}
+
+	public Todo(long i) {
+		this(i, "");
+	}
+
+	 public Todo(long i, String summary) {
+	        this.id = i;
+	        this.summary = summary;
+	    }
+	@Override
+	public long getId() {
+		// TODO Auto-generated method stub
+		return id;
+	}
+
+	@Override
+	public String getSummary() {
+		// TODO Auto-generated method stub
+		return summary;
+	}
+
+	@Override
+	public void setSummary(String summary) {
+		// TODO Auto-generated method stub
+		this.summary = summary;
+
+	}
+
+	@Override
+	public boolean isDone() {
+		// TODO Auto-generated method stub
+		return done;
+	}
+
+	@Override
+	public void setDone(boolean isDone) {
+		// TODO Auto-generated method stub
+		 this.done = isDone;
+
+	}
+
+	@Override
+	public Date getDueDate() {
+		// TODO Auto-generated method stub
+		return dueDate;
+	}
+
+	@Override
+	public void setDueDate(Date dueDate) {
+		// TODO Auto-generated method stub
+		this.dueDate = dueDate;
+	}
+
+	@Override
+	public IToDo copy() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

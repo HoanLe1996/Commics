@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\Spring_Project\BT_Tuan1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2819858848.index
+\BTL_MVC\src
+D:\Spring_Project\BT_Tuan1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2176520594.index
+\BTL_MVC\src

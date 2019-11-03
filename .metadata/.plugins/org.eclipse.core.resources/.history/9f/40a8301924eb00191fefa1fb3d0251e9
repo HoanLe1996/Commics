@@ -1,0 +1,5 @@
+package com.example.onetomany.model;
+
+public abstract class AuditModel {
+
+}

@@ -1,0 +1,5 @@
+package com.example.issues.controller;
+
+public class IssuesController {
+
+}

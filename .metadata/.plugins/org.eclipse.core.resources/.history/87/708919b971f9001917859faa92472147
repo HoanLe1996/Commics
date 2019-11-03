@@ -1,0 +1,36 @@
+package com.example.ToDo;
+
+import java.util.Date;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.example.ToDo.Repository.Reponsitory;
+import com.example.ToDo.model.ToDo;
+
+@SpringBootApplication
+public class ToDoExercise2Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ToDoExercise2Application.class, args);
+	}
+	@Bean
+    public CommandLineRunner jpaSample(Reponsitory todoRepo) {
+        return (args) -> {
+
+            // save 2 todos in the H2 database
+            todoRepo.save(new ToDo("Test"));
+
+            ToDo todo = new ToDo("Detailed test");
+            todo.setDueDate(new Date());
+            todo.setDescription("Detailed description");
+            todoRepo.save(todo);
+
+            // query for all todos in the H2 database and print them
+            todoRepo.findAll().forEach(System.out::println);
+        };
+    }
+
+}

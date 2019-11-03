@@ -1,0 +1,84 @@
+package com.example.comic.selector;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+
+import com.example.comic.model.Truyen;
+import com.example.comic.reponsitory.TruyenReponsitory;
+import com.example.comic.service.TruyenService;
+
+public class TruyenSelector implements TruyenService {
+
+
+	@Override
+	public String tacgia() {
+		// TODO Auto-generated method stub
+		return "div.info > div:first-child > a";
+	}
+
+	@Override
+	public String trangthai() {
+		// TODO Auto-generated method stub
+		return "div.info > div:last-child > span";
+	}
+
+	@Override
+	public String theloai() {
+		// TODO Auto-generated method stub
+		return "div.info > div:nth-child(2) > a";
+	}
+
+	@Override
+	public String nguon() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String mota() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String danhgia() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String luotxem() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String image() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String chuongtruyen() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String noidungchuongtruyen() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String truyen() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.example.ToDo.Repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface Reponsitory extends CrudRepository<ToDo, long>  {
+
+}
